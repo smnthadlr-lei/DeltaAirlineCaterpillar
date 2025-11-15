@@ -1,0 +1,38 @@
+# Node
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Certificates and keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Build
+dist/
+build/
+
+# Logs
+npm-debug.log*
+Yarn-debug.log*
+Yarn-error.log*
+
+# Coverage
+coverage/
+
+# JetBrains
+*.iml
+
+# Misc
+*.log
