@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="assests/icon.png">
+  <title>Delta Airline - Knowledge Base Index</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/delta.css">
+</head>
+<body>
+
+<!-- Animated airplane elements for Delta branding (multiple paths and timings) -->
+<div class="airplane-element plane-1">✈️</div>
+<div class="airplane-element plane-2">✈️</div>
+<div class="airplane-element plane-3">✈️</div>
+
+<div class="d-flex">
+  <!-- Sidebar -->
+  <aside class="sidebar-modern">
+    <a href="delta_indexes.html" class="sidebar-brand">
+      <div class="sidebar-logo-container">
+        <div class="">
+            <img src="assests/delta.png" alt="Delta Logo" style="width: 90px; height: 90px;" />
+          </div>
+        <div class="sidebar-brand-text">
+          <span class="brand-primary">Delta</span>
+          <span class="brand-secondary">Knowledge Base</span>
+        </div>
+      </div>
+    </a>
+
+    <nav class="sidebar-nav">
+      <a class="nav-link-modern" href="index.html">
+        <i class="bi bi-house-door-fill me-2"></i>
+        <span>Home</span>
+      </a>
+      <a class="nav-link-modern" href="dependent-action.html">
+        <i class="bi bi-grid-3x3-gap me-2"></i>
+        <span>Dependent Action</span>
+      </a>
+      <a class="nav-link-modern active" href="delta_indexes.html">
+        <i class="bi bi-file-text me-2"></i>
+        <span>Indexing</span>
+      </a>
+    </nav>
+    
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-text">
+        <i class="bi bi-info-circle me-2"></i>
+        <span>Knowledge Base v1.0</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content-wrapper">
+    <!-- Mobile menu toggle (visible on small screens) -->
+    <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+    <div id="mobile-overlay" class="mobile-overlay" tabindex="-1"></div>
+
+    <main class="main-content-full">
+      <!-- Blank Section for Index Page -->
+      <div id="indexes" class="indexes-section">
+        <!-- Content to be added here -->
+
+            
+            <h1>Delta Air Lines – MDSC Indexing Process</h1>
+            <p class="lead">Standard workflow for indexing all Delta Air Lines–related documents in the Document Routing System (DORS), focusing on the MDSC Indexing queue to ensure accuracy, consistency, and compliance.</p>
+            
+
+            <section class="section show" id="purpose">
+            <h2>1. Purpose</h2>
+            <p>This document defines the standard workflow for indexing all Delta Air Lines–related documents in the Document Routing System (DORS) particularly MDSC Indexing queue. It ensures accuracy, consistency, and compliance with Delta’s operational, contractual, and regulatory requirements.</p>
+            </section>
+
+            <section class="section show" id="scope">
+            <h2>2. Scope</h2>
+            <p>This process applies to all Document Processing Specialists handling Delta Air Lines’ incoming and outgoing documentation. This includes:</p>
+            <ul>
+                <li>Physical mail received at MDSC</li>
+                <li>Email attachments sent to Delta/MDSC inboxes</li>
+                <li>Faxes received via MDSC fax lines</li>
+                <li>Outgoing communications requiring indexing for record retention</li>
+            </ul>
+            </section>
+
+            <section class="section show" id="systems-used">
+            <h2>3. Systems used</h2>
+            <ul>
+                <li><strong>DORS:</strong> Used to view documents and assign indexing details (Business Unit, Document Type, Queue).</li>
+                <li><strong>MDSC Indexing queue:</strong> Used to input required indexing fields, attach documents, and finalize entries.</li>
+            </ul>
+            </section>
+
+            <section class="section show" id="document-sources">
+            <h2>4. Document sources</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>US Mail</td>
+                    <td>Physical documents delivered to MDSC mailroom.</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Digital documents received in designated MDSC email queues.</td>
+                </tr>
+                <tr>
+                    <td>Fax</td>
+                    <td>Scanned documents received via MDSC fax lines.</td>
+                </tr>
+                </tbody>
+            </table>
+            </section>
+
+            <section class="section show" id="workflow">
+            <h2>5. General indexing workflow</h2>
+
+            <div class="subsection" id="step-1">
+                <h3>Step 1 – Document receipt</h3>
+
+                <p><strong>US Mail</strong></p>
+                <ul>
+                <li>Collect mail daily from the MDSC mailroom.</li>
+                <li>Date-stamp each document upon receipt.</li>
+                <li>Scan physical documents into the secure processing folder.</li>
+                </ul>
+
+                <p><strong>Email</strong></p>
+                <ul>
+                <li>Access the Delta/MDSC inbound email queue.</li>
+                <li>Save attachments into the secure processing folder.</li>
+                <li>Ensure filenames are clear and referenceable.</li>
+                </ul>
+
+                <p><strong>Fax</strong></p>
+                <ul>
+                <li>Retrieve faxes from the fax inbox.</li>
+                <li>Save scanned copies to the secure processing folder.</li>
+                </ul>
+            </div>
+
+            <div class="subsection" id="step-2">
+                <h3>Step 2 – Document review</h3>
+                <ul>
+                <li>Check document quality: must be complete, legible, and relevant to Delta Air Lines operations.</li>
+                <li>Identify document category (e.g., benefits, payroll, employment).</li>
+                <li>Gather and group supporting documents for the same case.</li>
+                <li>If information is missing or unclear, reject the document.</li>
+                </ul>
+            </div>
+
+            <div class="subsection" id="step-3">
+                <h3>Step 3 – Indexing in DORS</h3>
+                <ul>
+                <li>Open DORS and locate the document.</li>
+                <li>Identify the correct:
+                    <ul>
+                    <li>Business Unit (e.g., Benefits, Employment, Payroll)</li>
+                    <li>Document Type (e.g., Beneficiary Form, Direct Deposit Authorization)</li>
+                    <li>Queue (e.g., MDSC-Adoption Reimbursement, RET-Retirement)</li>
+                    </ul>
+                </li>
+                <li>Use the provided DORS mapping guide to ensure accuracy.</li>
+                <li>Save and route to the correct queue.</li>
+                </ul>
+            </div>
+
+            <div class="subsection" id="step-4">
+                <h3>Step 4 – Quality check</h3>
+                <ul>
+                <li>Conduct daily peer review of indexed items.</li>
+                <li>Verify:
+                    <ul>
+                    <li>Correct document type</li>
+                    <li>Accurate member ID</li>
+                    <li>Proper queue selection in DORS</li>
+                    <li>Legible, attached file</li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </section>
+
+            <section class="section show" id="retention-compliance">
+            <h2>6. Retention &amp; compliance</h2>
+            <ul>
+                <li>Follow Delta’s records retention policy.</li>
+                <li>Handle all sensitive documents in compliance with data privacy regulations.</li>
+                <li>Do not store documents outside of the approved systems.</li>
+            </ul>
+            </section>
+
+            <section class="section show" id="reference-dors-mapping">
+            <h2>7. Reference – Using DORS mapping</h2>
+            <p>To find correct indexing details:</p>
+            <ul>
+                <li>In DORS, search by document name or description.</li>
+                <li>Refer to the DORS Mapping Guide for:
+                <ul>
+                    <li>Business Unit</li>
+                    <li>Document Type</li>
+                    <li>Queue Name</li>
+                </ul>
+                </li>
+                <li>Double-check spelling and category—misrouted documents delay processing.</li>
+            </ul>
+
+          </section>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>DORS - Business Unit</th>
+                    <th>DORS - Document Type</th>
+                    <th>DORS - Queue</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Benefits</td><td>Adoption Reimbursement Domestic</td><td>MDSC-Adoption Reimbursement</td></tr>
+                <tr><td>Benefits</td><td>Adoption Reimbursement International</td><td>MDSC-Adoption Reimbursement</td></tr>
+                <tr><td>Benefits</td><td>Disabled Dependent Child Determination</td><td>MDSC-Disabled Dependents</td></tr>
+                <tr><td>Benefits</td><td>Disabled Dependent Child Package</td><td>MDSC-Disabled Dependents</td></tr>
+                <tr><td>Benefits Backfile</td><td>401K</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Benefits Backfile</td><td>Beneficiary Form - Executive</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Benefits Backfile</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Benefits Backfile Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>Benefits Backfile</td><td>Benefits Enrollment Worksheet</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Detail Calculation - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Calculation Detail - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Cancellation of Benefits</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Checklist - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Checklist - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Correspondence - Deferred Vested</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Court Ordered Benefits</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Benefits Backfile</td><td>Court Ordered Benefits Reject</td><td>MDSC-Backfile Index Rejects</td></tr>
+                <tr><td>Benefits Backfile</td><td>Denial Letter</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Denials - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Employment Contract - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>ERISA Backfile</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Benefits Backfile</td><td>ERISA Backfile Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>Benefits Backfile</td><td>ERISA Documents</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Form Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Forms - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Initial Letter - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>LOA - 90 Day Letter</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Notification of Death - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Outbound Survivor Doc</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Outbound Survivor Doc Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>Benefits Backfile</td><td>Over - Under Payment - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Over - Under Payment - Survivor</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Requests - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Retirement</td><td>MDSC-Index</td></tr>
+                <tr><td>Benefits Backfile</td><td>Retirement Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>Benefits Backfile</td><td>Screen Print - QDRO</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Screen Print - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Screen Print - Survivor</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Social Security Information - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>SPRSB - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Survivor Benefits</td><td>EMP-Index</td></tr>
+                <tr><td>Benefits Backfile</td><td>Tax Form - Disability</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Tax Form - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Verification - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Wage Theft Prevention Act</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Waiver - Deferred Vested</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Wavier - Retirement</td><td>COMPLETE</td></tr>
+                <tr><td>Benefits Backfile</td><td>Workers Compensation</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Benefits Backfile</td><td>Workers Compensation reject</td><td>MDSC-Backfile Index Rejects</td></tr>
+
+                <tr><td>DB (Defined Benefit) - Retirement NW</td><td>Application for NW Ret Plan Benefits</td><td>NWA-Retirement</td></tr>
+                <tr><td>DB (Defined Benefit) - Retirement NW</td><td>Correspondence - NW</td><td>MDSC-Index</td></tr>
+                <tr><td>DB (Defined Benefit) - Retirement NW</td><td>Post-retirement Beneficiary Designation Form</td><td>NWA-Retirement</td></tr>
+
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Correspondence - Survivor</td><td>SVR-Survivor Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Death Certificate</td><td>SVR-Survivor Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Income Update</td><td>SVR-Income Update</td></tr>
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Legal Document</td><td>SVR-Survivor Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Notification of Death</td><td>SVR-Survivor Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Social Security Information</td><td>SVR-Survivor Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit) - Survivor</td><td>Survivor Election</td><td>SVR-Survivor Correspondence</td></tr>
+
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Annual Attestation - SSA Award</td><td>MDSC -Attestation-SS Offset</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Application "Defined Benefit Agreements"</td><td>RET-Retirement</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Application Delta</td><td>RET-Retirement</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Correspondence - Delta</td><td>MDSC -Retirement Follow-ups</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Correspondence - NW</td><td>RET-Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Death Audit Archive</td><td>MDSC-Index</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Ground Retirement Estimate Request</td><td>TBO-Ground Retirement Estimate-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Initial Outgoing Retirement Packet</td><td>COMPLETE-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>John Hancock Western Estimate</td><td>RET-Western Ground-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>John Hancock Western Statement</td><td>RET-Western Ground-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Legal Document</td><td>CRT-Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Pension Verification"Retirment/Pension Agreements"</td><td>MDSC-Employ/Income Verify</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Pilot Retirement E-Mail Request</td><td>TBO-Pilot Retirement Estimate-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Pilot Retirement Estimate Request</td><td>TBO-Pilot Retirement Estimate-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>PRSB Election</td><td>RET-Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Rescind Retirement Request</td><td>RET-Retirement</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Retirement Actual</td><td>COMPLETE</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Retirement Estimate</td><td>COMPLETE</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>SERP Benefit / Distribution - Executive</td><td>RET-Non-Pilot-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>SSA Earnings and Benefit Estimate</td><td>DC-401K</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>SSA Award</td><td>RET-Retirement</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Teamsters Pension Trust</td><td>RET-Western Ground</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Western D Plan Application</td><td>RET-Correspondence</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Western Ground Application</td><td>RET-Western Ground-Archive</td></tr>
+                <tr><td>DB (Defined Benefit)- Retirement</td><td>Western Ground Benefit Information Request</td><td>RET-Western Ground-Archive</td></tr>
+
+                <tr><td>DB/DC (Defined Benefit/Contribution)- Retirement</td><td>Check Undeliverable (Ret.)</td><td>RET-Retirement</td></tr>
+                <tr><td>DB/DC (Defined Benefit/Contribution)- Retirement</td><td>Western Sick Leave</td><td>MDSC -Backfile Index-Archive</td></tr>
+
+                <tr><td>DB/DC (Defined Benefit/Contribution)-Retirement NW</td><td>Post-retirement Lump Sum Benef Desig Form</td><td>NWA-Retirement-Archive</td></tr>
+                <tr><td>DB/DC (Defined Benefit/Contribution)-Retirement NW</td><td>Pre-retirement Excess Plan Benefic Desig Form</td><td>NWA-Retirement-Archive</td></tr>
+
+                <tr><td>DC (Defined Contribution)</td><td>Correspondence</td><td>NWA-Retirement</td></tr>
+                <tr><td>DC (Defined Contribution)- 401K</td><td>Correspondence</td><td>DC-401K</td></tr>
+
+                <tr><td>Employment</td><td>Background Information</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>EE Archive</td><td>COMPLETE</td></tr>
+                <tr><td>Employment</td><td>Employment Application/Agreement</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Employment related documents</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Affidavit of Residence</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Employment</td><td>Certificate</td><td>COMPLETE</td></tr>
+                <tr><td>Employment</td><td>Correspondence</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Court Orders</td><td>COMPLETE</td></tr>
+                <tr><td>Employment</td><td>Delta University</td><td>EMP-Index-Archive</td></tr>
+                <tr><td>Employment</td><td>Disciplinary Letter</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Educational Assistance Form</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>EE Archive</td><td>COMPLETE</td></tr>
+                <tr><td>Employment</td><td>EE Archive Reject</td><td>EMP-Index Rejects</td></tr>
+                <tr><td>Employment</td><td>Employee Data and Acknowledgements</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Employment</td><td>Employee Grievances</td><td>COMPLETE</td></tr>
+                <tr><td>Employment</td><td>Employee Record Request</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Employment History</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Employment related documents</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Employment verification</td><td>HRF-HRF</td></tr>
+                <tr><td>Employment</td><td>Equifax</td><td>EMP-Index-Archive</td></tr>
+                <tr><td>Employment</td><td>Evaluation Performance Review Appraisal</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Employment</td><td>Fingerprint Application</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>I-9</td><td>COMPLETE</td></tr>
+                <tr><td>Employment</td><td>Letter Resignation</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Medical Audio Screen</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Medical Drug Screen</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Medical Miscellaneous (Various Medical)</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Employment</td><td>Medical Physical</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Military &amp; Civilian Authorization</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Pre-Retirement Surv Benefit Option</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>PRIA Verifications for ex-Delta pilots</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Employment</td><td>Program Election Form</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>QTO Package (Quality Time Off)</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Recommendation Letter</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Separation Agreements</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Separation Notice</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Termination Interview</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Termination Recommendation</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Typing Test</td><td>EMP-Index</td></tr>
+                <tr><td>Employment</td><td>Unemployment Claim</td><td>EMP-Index-Archive</td></tr>
+                <tr><td>Employment</td><td>Voluntary Severance Package</td><td>EMP-Index</td></tr>
+
+                <tr><td>H&amp;W (Health &amp; Welfare)</td><td>COBRA Correspondence</td><td>H&amp;W-Cobra</td></tr>
+                <tr><td>H&amp;W (Health &amp; Welfare)</td><td>Eligibility Inquiry</td><td>MDSC-Eligibility</td></tr>
+                <tr><td>H&amp;W (Health &amp; Welfare)</td><td>Evidence of Insurability</td><td>H&amp;W-Health &amp; Welfare</td></tr>
+                <tr><td>H&amp;W (Health &amp; Welfare)</td><td>H&amp;W Outbound Work</td><td>MDSC -H&amp;W Follow Up</td></tr>
+                <tr><td>H&amp;W (Health &amp; Welfare)</td><td>Medicare Part B Proof</td><td>H&amp;W-Medicare</td></tr>
+
+                <tr><td>H&amp;W (Health &amp; Welfare) - Premium Pay</td><td>Direct Bill Check Reroute</td><td>H&amp;W-Direct Bill Check Reroute</td></tr>
+                <tr><td>H&amp;W (Health &amp; Welfare) - Premium Pay</td><td>Direct Debit Authorization</td><td>MDSC-EDM Direct Debit Authorization</td></tr>
+                <tr><td>H&amp;W (Health &amp; Welfare) - Premium Pay</td><td>Payment Method Change Request</td><td>H&amp;W-Health &amp; Welfare</td></tr>
+
+                <tr><td>HR Records</td><td>Employee Signature Form</td><td>MDSC -Employee Signature</td></tr>
+
+                <tr><td>MDSC - Benefits</td><td>My Rewards/ Unstoppable Together</td><td>MDSC -My Rewards</td></tr>
+
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Application</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Calculation Detail - QDRO</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Calculation Detail - QDRO - Pilot</td><td>CRT-QDRO Pilot-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Checklist - QDRO</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Correspondence</td><td>CRT-QDRO</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Direct Deposit</td><td>CRT-Correspondence-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Legal Document</td><td>CRT-Correspondence</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>QDRO Conversion Worksheet</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>QDRO Estimate</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>QDRO Estimate - Pilot</td><td>CRT-QDRO Pilot-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>QMCSO</td><td>PAY-QMCSO</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>QMCSO Benefits Verification</td><td>PAY-QMCSO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>QMCSO Termination</td><td>PAY-QMCSO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Separate Interest Court Order</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Shared Payment Court Order</td><td>CRT-QDRO-Archive</td></tr>
+                <tr><td>MDSC - Court Ordered Benefits</td><td>Tax Form</td><td>CRT-Correspondence-Archive</td></tr>
+
+                <tr><td>MDSC - Email</td><td>Accident Leave E-Mail</td><td>EML-Accident Leave E-Mail Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>Benefits Email - Internal</td><td>EML-Emails for Benefits</td></tr>
+                <tr><td>MDSC - Email</td><td>Delta Self Service E-Mail</td><td>EML-Delta Self Service E-Mail Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>Disability E-Mail</td><td>EML-Disability E-Mail Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>General E-Mail</td><td>EML-General E-Mail Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>Ground Retirement Estimate Email Request</td><td>TBO-Ground Retirement Estimate</td></tr>
+                <tr><td>MDSC - Email</td><td>HR Field Ops E-Mail</td><td>EML-HR Field Ops E-Mail Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>Management E-Mail</td><td>EML-Management Requests</td></tr>
+                <tr><td>MDSC - Email</td><td>Pass Travel Email</td><td>EML-Travel Pass Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>Payroll Email - Internal</td><td>EML-Emails for Payroll</td></tr>
+                <tr><td>MDSC - Email</td><td>Performance Management E-Mail</td><td>EML-Delta Self Service E-Mail Indexing</td></tr>
+                <tr><td>MDSC - Email</td><td>Platinum Escalation Email Correspondence</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - Email</td><td>Retirement Email - Internal</td><td>EML-Emails for Retirement</td></tr>
+                <tr><td>MDSC - Email</td><td>Self Service Email - Internal</td><td>EML-Emails for Self Service</td></tr>
+                <tr><td>MDSC - Email</td><td>Self Service Email-About Me</td><td>EML-Emails for Self Service</td></tr>
+                <tr><td>MDSC - Email</td><td>Workers Compensation E-Mail</td><td>EML-Workers Compensation E-Mail Indexing</td></tr>
+
+                <tr><td>MDSC - Employee Data Management</td><td>Address Change</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Companion Status Change</td><td>EDM-Parent / Companion Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Dependent Information Change</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Domestic Partner Affidavit</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Domestic Partner Change</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Domestic Partner Termination</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Employee Equal Opportunity</td><td>MDSC-Equal Employment</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Employee Information Change</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>FSCF Email - Internal</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>International Documentation Affidavit</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>MSS</td><td>EDM-MSS</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Parent Status Change</td><td>EDM-Parent / Companion Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Spouse Information Change</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Verification Documentation</td><td>EDM-Family Status Change</td></tr>
+                <tr><td>MDSC - Employee Data Management</td><td>Voluntary Spouse Removal</td><td>EML-Emails for Benefits</td></tr>
+
+                <tr><td>MDSC - Employees Care Fund</td><td>Employee Care Fund Application</td><td>MDSC-Index</td></tr>
+                <tr><td>MDSC - Employees Care Fund</td><td>Employee Care Fund Supporting Document</td><td>MDSC-Index</td></tr>
+
+                <tr><td>MDSC - MDSC Backfile</td><td>Benefits</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Correspondence - Executive</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Correspondence-Executive Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Employee Data Management</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Exit Program Documents</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Exit Program Documents Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>LOA Letter</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>LOA Letter Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Payroll Backfile</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Payroll Backfile Reject</td><td>MDSC-Index Rejects</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Premium Pay</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Update Form - Family</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Update Form - Retiree - Survivor</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Employee Data Management</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Pin Selection Form - Retiree - Survivor</td><td>COMPLETE-Archive</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Positive Space Travel for Life</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>MDSC - MDSC Backfile</td><td>Tax Form - WA Long Term Care Exemption</td><td>EML-Management Requests</td></tr>
+
+                <tr><td>MDSC - Miscellaneous</td><td>Return Receipt</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - Miscellaneous</td><td>Returned Mail</td><td>COMPLETE</td></tr>
+                <tr><td>MDSC - Miscellaneous</td><td>Unknown ESC</td><td>MDSC -Documents From Payroll</td></tr>
+
+                <tr><td>MDSC - Survivor</td><td>Direct Deposit</td><td>SVR-Survivor Correspondence</td></tr>
+                <tr><td>MDSC - Survivor</td><td>Outbound Work - Internal</td><td>EML-Survivor Follow up</td></tr>
+
+                <tr><td>MDSC - Verification</td><td>Benefit Verification</td><td>MDSC-Employ/Income Verify</td></tr>
+                <tr><td>MDSC - Verification</td><td>Employment Verification</td><td>MDSC-Employ/Income Verify</td></tr>
+                <tr><td>MDSC - Verification</td><td>Government Verification</td><td>MDSC-Special Handling</td></tr>
+                <tr><td>MDSC - Verification</td><td>HRM - Income Verification</td><td>MDSC-Employ/Income Verify</td></tr>
+                <tr><td>MDSC - Verification</td><td>Income Verification</td><td>MDSC-Employ/Income Verify</td></tr>
+                <tr><td>MDSC - Verification</td><td>Massachusetts Waiver of Medical</td><td>EDM-Enrollment/Cancellation</td></tr>
+                <tr><td>MDSC - Verification</td><td>Power of Attorney</td><td>MDSC-Special Handling</td></tr>
+                <tr><td>MDSC - Verification</td><td>Verification Backfile</td><td>COMPLETE</td></tr>
+
+                <tr><td>MDSC - Workers Compensation</td><td>Active Removal Notice</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>Correspondence</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>ESIS Request</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>Missing Employers</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>NY Reimbursement Request</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>Unpaid Provider Bill</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>Wage Statement</td><td>WCP-Workers Compensation</td></tr>
+                <tr><td>MDSC - Workers Compensation</td><td>WC Tax Letter</td><td>WCP-Workers Compensation</td></tr>
+
+                <tr><td>MDSC Vendor Management</td><td>Correspondence</td><td>VMG-Vendor Management-Archive</td></tr>
+
+                <tr><td>Payroll - Absence Management</td><td>Absence Management Backfile</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Check Undeliverable (Disability)</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Correspondence</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Delta/Vendor Disability Requests</td><td>ABS-DLTA/VEN DIS REQUEST</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Direct Deposit</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Disability Forms</td><td>ABS-DISABILITY FORMS</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Disability Pay Data</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Disability Pay Data Reject</td><td>MDSC-Index</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Disability Pay/Status Updates</td><td>ABS-DISABILITY UPDATES</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Government Forms - Disability</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Notice of Disability</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Repayment of Overpayment</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Social Security Award Letter</td><td>PAY-Disability - STD</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>STD Calculation</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Payroll - Absence Management</td><td>Verification</td><td>PAY-Disability - STD</td></tr>
+
+                <tr><td>Payroll - Benefit</td><td>Correspondence</td><td>BFT-Payroll</td></tr>
+                <tr><td>Payroll - Benefit</td><td>Direct Deposit Authorization Agreement</td><td>BFT-Payroll</td></tr>
+                <tr><td>Payroll - Benefit</td><td>Manual Check Request</td><td>BFT-Payroll</td></tr>
+                <tr><td>Payroll - Benefit</td><td>State Tax</td><td>BFT-Payroll</td></tr>
+                <tr><td>Payroll - Benefit</td><td>W4P Retirement</td><td>BFT-Payroll</td></tr>
+
+                <tr><td>Payroll - Canada</td><td>Correspondence</td><td>CAN-Payroll</td></tr>
+                <tr><td>Payroll - Canada</td><td>Direct Deposit Authorization Agreement</td><td>CAN-Payroll</td></tr>
+                <tr><td>Payroll - Canada</td><td>Incentive Award</td><td>CAN-Payroll</td></tr>
+                <tr><td>Payroll - Canada</td><td>Pass Charges</td><td>CAN-Payroll</td></tr>
+                <tr><td>Payroll - Canada</td><td>Payroll Adjustment</td><td>CAN-Payroll</td></tr>
+                <tr><td>Payroll - Canada</td><td>Tax</td><td>CAN-Payroll</td></tr>
+
+                <tr><td>Payroll - Compensation</td><td>Separation Notices</td><td>PAY-Administrative Mailing</td></tr>
+                <tr><td>Payroll - Compensation</td><td>Unknown Compensation Email</td><td>CMP-Compensation</td></tr>
+
+                <tr><td>Payroll - Expat</td><td>Correspondence</td><td>EXP-Payroll</td></tr>
+                <tr><td>Payroll - Expat</td><td>Employee Data Change Request</td><td>EXP-Payroll</td></tr>
+                <tr><td>Payroll - Expat</td><td>W2 Request</td><td>GEN-Document Reissue</td></tr>
+
+                <tr><td>Payroll - Flight</td><td>ALPA Dues</td><td>FLT-ALPA Deductions</td></tr>
+                <tr><td>Payroll - Flight</td><td>ALPA PAC</td><td>FLT-ALPA Deductions</td></tr>
+                <tr><td>Payroll - Flight</td><td>DPMA Deduction</td><td>FLT-ALPA Deductions</td></tr>
+
+                <tr><td>Payroll - Garnishment</td><td>Answers - GA</td><td>GAR-Answers - Georgia</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Answers - MI</td><td>GAR-Answers - Michigan</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Answers - MN</td><td>GAR-Answers - Minnesota</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Answers - OH</td><td>GAR-Answers - Ohio</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Answers - Other</td><td>GAR-Answers - Other</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Answers - UT</td><td>GAR-Answers - Utah</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Bankruptcies</td><td>GAR-Bankruptcies and Wage Assignments</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Correspondence</td><td>GAR-Correspondence</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Correspondence - GA</td><td>GAR-Processing - Georgia</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Correspondence - MI</td><td>GAR-Processing - Michigan</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Correspondence - MN</td><td>GAR-Processing - Minnesota</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Correspondence - UT</td><td>GAR-Processing - Utah</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Default Notice</td><td>GAR-Garnishment</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Check</td><td>GAR-Check</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Interrogative</td><td>GAR-Garnishment</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Release</td><td>GAR-Garnishment</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Release - GA</td><td>GAR-Processing - Georgia</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Release - MI</td><td>GAR-Processing - Michigan</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Release - MN</td><td>GAR-Processing - Minnesota</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Release - Other</td><td>GAR-Processing - Other</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Garnishment Release - UT</td><td>GAR-Processing - Utah</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Student Loan</td><td>GAR-Student Loans</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Subpoena</td><td>GAR-Garnishment</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Support Inquiry</td><td>GAR-Child Support</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Support Order</td><td>GAR-Child Support</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Tax Levy - IRS</td><td>GAR-IRS and Tax Levies</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Tax Levy - IRS Release Order</td><td>GAR-IRS and Tax Levies</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Tax Levy - State</td><td>GAR-IRS and Tax Levies</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Void Check Request</td><td>GAR-Check-Archive</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Wage Assignment</td><td>GAR-Bankruptcies and Wage Assignments</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Withholding Order - GA</td><td>GAR-Processing - Georgia</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Withholding Order - MI</td><td>GAR-Processing - Michigan</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Withholding Order - MN</td><td>GAR-Processing - Minnesota</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Withholding Order - OH</td><td>GAR-Processing - Ohio</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Withholding Order - Other</td><td>GAR-Processing - Other</td></tr>
+                <tr><td>Payroll - Garnishment</td><td>Withholding Order - UT</td><td>GAR-Processing - Utah</td></tr>
+
+                <tr><td>Payroll - General</td><td>1099 Request</td><td>GEN-Document Reissue</td></tr>
+                <tr><td>Payroll - General</td><td>Accounts Payable Check Request</td><td>PAY-Income Employment Verification</td></tr>
+                <tr><td>Payroll - General</td><td>Accounts Payable Code Block Request</td><td>GEN-Code Blocks</td></tr>
+                <tr><td>Payroll - General</td><td>Check Reprint Request</td><td>GEN-Check</td></tr>
+                <tr><td>Payroll - General</td><td>Check Undeliverable</td><td>GRD-Check</td></tr>
+                <tr><td>Payroll - General</td><td>Correspondence</td><td>PAY-Income Employment Verification</td></tr>
+                <tr><td>Payroll - General</td><td>Employment Verification</td><td>PAY-Income Employment Verification</td></tr>
+                <tr><td>Payroll - General</td><td>FICA Release</td><td>PAY-Income Employment Verification</td></tr>
+                <tr><td>Payroll - General</td><td>Income Verification</td><td>PAY-Income Employment Verification</td></tr>
+                <tr><td>Payroll - General</td><td>Overpayment Notification</td><td>PAY- Index</td></tr>
+                <tr><td>Payroll - General</td><td>Social Security Eligibility - Benefits</td><td>PAY-Income Employment Verification</td></tr>
+                <tr><td>Payroll - General</td><td>Unemployment Insurance Claim</td><td>TAX-Unemployment Claims</td></tr>
+                <tr><td>Payroll - General</td><td>United Way Deduction</td><td>GRD-United Way</td></tr>
+                <tr><td>Payroll - General</td><td>Urgent Man CK - Auto In</td><td>PAY-MAN CK Request-Archive</td></tr>
+                <tr><td>Payroll - General</td><td>W2 / 1099 Request Address Change</td><td>GEN-Document Reissue-Archive</td></tr>
+                <tr><td>Payroll - General</td><td>Wire Directive</td><td>GEN-Code Blocks</td></tr>
+
+                <tr><td>Payroll - Ground</td><td>Bonus Payment Request</td><td>GRD-Payroll</td></tr>
+                <tr><td>Payroll - Ground</td><td>Check</td><td>GRD-Check</td></tr>
+                <tr><td>Payroll - Ground</td><td>Correspondence</td><td>GRD-Payroll</td></tr>
+                <tr><td>Payroll - Ground</td><td>Direct Deposit Authorization Agreement</td><td>GRD-Direct Deposit</td></tr>
+                <tr><td>Payroll - Ground</td><td>Educational Assistance Reimbursement</td><td>GRD-Tuition Reimbursement</td></tr>
+                <tr><td>Payroll - Ground</td><td>FCP Invoice</td><td>GRD-Payroll</td></tr>
+                <tr><td>Payroll - Ground</td><td>Local Tax</td><td>GRD-Tax</td></tr>
+                <tr><td>Payroll - Ground</td><td>Manual Check Request</td><td>GRD-Payroll</td></tr>
+                <tr><td>Payroll - Ground</td><td>Overpayment Correspondence</td><td>GEN-Overpayment</td></tr>
+                <tr><td>Payroll - Ground</td><td>Relocation Reimbursement</td><td>GRD-Relocation</td></tr>
+                <tr><td>Payroll - Ground</td><td>Relocation Repayment Request</td><td>GRD-Relocation</td></tr>
+                <tr><td>Payroll - Ground</td><td>State Tax</td><td>GRD-Tax</td></tr>
+                <tr><td>Payroll - Ground</td><td>Union Dues</td><td>GRD-Union Dues-Archive</td></tr>
+                <tr><td>Payroll - Ground</td><td>Vacation Donation -Ground</td><td>GRD-Payroll</td></tr>
+                <tr><td>Payroll - Ground</td><td>W4</td><td>GRD-Tax</td></tr>
+
+                <tr><td>Payroll - Island</td><td>Aruba MSPR</td><td>ISL-MSPR-Archive</td></tr>
+                <tr><td>Payroll - Island</td><td>Aruba Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Aruba Payroll Tax</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Aruba Shared Rewards</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda Direct Deposit</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda MSPR</td><td>ISL-MSPR-Archive</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda PCA</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda Pension</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda Quarterly Tax</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda Shared Rewards</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Bermuda Social Insurance</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Correspondence</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Correspondence - Vendor</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Grand Cayman Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Grand Cayman PCA</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Grand Cayman Pension</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Grand Cayman Shared Rewards</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Jamaica Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Jamaica Payroll Tax</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Jamaica PCA</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Jamaica Shared Rewards</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Nassau Accident Insurance Form</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Nassau Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>Nassau Shared Rewards</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St Lucia Payroll Tax</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St Lucia PCA</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St Lucia Shared Rewards</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St Maarten Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St Maarten Payroll Tax</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St Maarten PCA</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St. Lucia Pass Charges</td><td>ISL-Payroll</td></tr>
+                <tr><td>Payroll - Island</td><td>St. Maarten Shared Rewards</td><td>ISL-Payroll</td></tr>
+
+                <tr><td>Payroll - Tax and Accounting</td><td>ADP Invoice</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Correspondence - IRS</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Credit Notice</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Detailed Tax Report</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Employee Correspondence</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Employee Withholding Allowance Certificate</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Employer Quarterly Tax Report - GA</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Multiple Worksite Report</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Notice of Deficiency Withholding Tax</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Tax Lien</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Tax Notice</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Tax Notice - State</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Tax Return Form</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Tax Withholding Return</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Unemployment Charges</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Unemployment Claim</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Unemployment Rate Notice</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Unemployment Wage Audit</td><td>TAX-Index</td></tr>
+                <tr><td>Payroll - Tax and Accounting</td><td>Unknown Tax Doc</td><td>TAX-Index</td></tr>
+
+                <tr><td>Talent Acquisition - FOP</td><td>Pilot Hire Records</td><td>MDSC - Backfile Index</td></tr>
+                <tr><td>Talent Acquisition - FOP</td><td>PRIA requests for new pilots</td><td>MDSC - Backfile Index</td></tr>
+
+                <tr><td>Talent Acquisition Backfiles</td><td>Application</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Background Information</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Employment History</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>I-9</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Interview Information</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Medical Audio Screen</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Medical Drug Screen</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Medical Physical</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Military &amp; Civilian Authorization</td><td>STF-Backfile Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Pilot Military Supporting Document</td><td>STF-Index</td></tr>
+                <tr><td>Talent Acquisition Backfiles</td><td>Typing Test</td><td>STF-Backfile Index</td></tr>
+
+                <tr><td>Talent Acquisition- IFS</td><td>DOT Drug Screen</td><td>MDSC - Backfile Index</td></tr>
+
+                <tr><td>TCC - Pass Travel</td><td>Award Travel</td><td>TRA-Pass</td></tr>
+                <tr><td>TCC - Pass Travel</td><td>Pass Charges Invoice</td><td>TRA-Pass Usage Report</td></tr>
+                <tr><td>TCC - Pass Travel</td><td>Pass Revocation / Reinstatement</td><td>TRA-High Priority</td></tr>
+                <tr><td>TCC - Pass Travel</td><td>Pass Travel Correspondence</td><td>TRA-Correspondence- Archive</td></tr>
+                <tr><td>TCC - Pass Travel</td><td>Refund Request</td><td>TRA-Pass</td></tr>
+
+                <tr><td>TCC Pass Travel Backfile</td><td>Pass Travel</td><td>MDSC - Backfile Index</td></tr>
+                </tbody>
+            </table>
+           
+
+            <section class="section show" id="dors-access-guide">
+            <h2>8. DORS access guide</h2>
+            <ol>
+                <li><strong>Log in to DORS:</strong> <a href="https://delta.itocservices.com/DORS/main.aspx#/home">https://delta.itocservices.com/DORS/main.aspx#/home</a></li>
+                <li><strong>Open Workflow:</strong> Access <em>WORKFLOW</em> on the left panel.</li>
+                <li><strong>Select General:</strong> In Workflow, select <em>General</em> to view the Queues.</li>
+                <li><strong>Find MDSC-Index:</strong> Locate and open <em>MDSC-Index</em>.</li>
+                <li><strong>Sort DCNs:</strong> Arrange the DCNs from <em>Oldest to Newest</em>.</li>
+            </ol>
+            <div class="note"><strong>Important:</strong> Always index the old DCNs first.</div>
+            <p><strong>Work the DCN:</strong> Click on the DCN you want to work on and fill out the information needed.</p>
+            </section>
+
+            <footer class="section small show">
+            <p>&copy; Delta Air Lines. Internal use. Do not store documents outside approved systems.</p>
+            </footer>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</body>
+</html>

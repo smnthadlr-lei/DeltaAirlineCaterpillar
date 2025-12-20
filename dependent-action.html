@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="assests/icon.png">
+  <title>Delta Airline - Dependent Actions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/delta.css">
+</head>
+<body>
+
+<!-- Animated airplane elements for Delta branding (multiple paths and timings) -->
+<div class="airplane-element plane-1">✈️</div>
+<div class="airplane-element plane-2">✈️</div>
+<div class="airplane-element plane-3">✈️</div>
+
+<div class="d-flex">
+  <!-- Sidebar -->
+  <aside class="sidebar-modern">
+    <a href="delta_indexes.html" class="sidebar-brand">
+      <div class="sidebar-logo-container">
+        <div class="">
+            <img src="assests/delta.png" alt="Delta Logo" style="width: 90px; height: 90px;" />
+          </div>
+        <div class="sidebar-brand-text">
+          <span class="brand-primary">Delta</span>
+          <span class="brand-secondary">Knowledge Base</span>
+        </div>
+      </div>
+    </a>
+
+    <nav class="sidebar-nav">
+      <a class="nav-link-modern" href="index.html">
+        <i class="bi bi-house-door-fill me-2"></i>
+        <span>Home</span>
+      </a>
+      <a class="nav-link-modern active" href="dependent-action.html">
+        <i class="bi bi-grid-3x3-gap me-2"></i>
+        <span>Dependent Action</span>
+      </a>
+      <a class="nav-link-modern" href="delta_indexes.html">
+        <i class="bi bi-file-text me-2"></i>
+        <span>Indexing</span>
+      </a>
+    </nav>
+    
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-text">
+        <i class="bi bi-info-circle me-2"></i>
+        <span>Knowledge Base v1.0</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content-wrapper">
+    <!-- Mobile menu toggle (visible on small screens) -->
+    <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+    <div id="mobile-overlay" class="mobile-overlay" tabindex="-1"></div>
+
+    <main class="main-content-full">
+      <!-- Search Section -->
+      <div id="dependent-action" class="search-section-full">
+        <div class="search-container-full mt-4">
+          <div class="search-header">
+            <div class="search-icon-wrapper">
+              <i class="bi bi-search search-main-icon"></i>
+            </div>
+            <div class="search-text-content">
+              <label for="optionSelector" class="search-label-full">
+                <i class="bi bi-funnel-fill me-2"></i>
+                Search Dependent Actions
+              </label>
+              <p class="search-description">Type or select from the dropdown to find specific action guidelines</p>
+            </div>
+          </div>
+          <div class="select-wrapper">
+            <select id="optionSelector" class="select-modern-full select2">
+            <option value="">-- Select an Option --</option>
+            <option value="1">Adding Natural Born Child (Within 60 days from birth event) </option>
+            <option value="2">Adding Natural Born Child (Outside 60 days of birth event)</option>
+            <option value="3">Adding Spouse (Within 60 days of marriage event) </option>
+            <option value="4">Adding Spouse (Outside 60 days of marriage event) </option>
+            <option value="5">Updating TC/DP to SP (Within 60 days of marriage event) </option>
+            <option value="6">Updating TC/DP to SP (Outside 60 days of marriage event) </option>
+            <option value="7">Updating TC/DP to SP (Outside 60 days - Process Date) </option>
+            <option value="8">Removing spouse due to divorce </option>
+            <option value="9">Update SP to Legally Separated Spouse </option>
+            <option value="10">Updating SP to Separated spouse. </option>
+            <option value="11">Reporting death of spouse</option>
+            <option value="12">Reporting death of spouse (no death certificate) </option>
+            <option value="13">Update SP Information </option>
+            <option value="14">Adding Domestic Partner</option>
+            <option value="15">Updating TC to DP.</option>
+            <option value="16">Adding DP (SP still active on record) </option>
+            <option value="17">Adding DP (EE already have a DP on file) </option>
+            <option value="18">Removing DP (No termination form) </option>
+            <option value="19">Removing DP (With termination form) </option>
+            <option value="20">Removing DP due to death </option>
+            <option value="21">Updating DP information </option>
+            <option value="22">Adding child of DP </option>
+            <option value="23">Adding TC for the first time. </option>
+            <option value="24">Updating TC (Current TC have not commenced a flight) </option>
+            <option value="25">Updating TC (Current TC commenced a flight, request is within 6 weeks from PAD) </option>
+            <option value="26">Updating TC(Current TC commenced a flight within PAD) </option>
+            <option value="27">Revoking TC </option>
+            <option value="28">Reporting death of TC </option>
+            <option value="29">Reinstating Old TC (Current TC have not commenced a flight) </option>
+            <option value="30">Reinstating previous TC (Current TC commenced a flight, request is within 6 weeks from the PAD) </option>
+            <option value="31">Reinstating Spouse (Current TC didn't commenced a flight) </option>
+            <option value="32">Reinstating spouse (Current TC commenced a flight within PAD, request is within 6 weeks from PAD) </option>
+            <option value="33">Updating TC Information </option>
+            <option value="34">Adding PA </option>
+            <option value="35">Adding PS </option>
+            <option value="36">Adding PL </option>
+            <option value="37">Reporting death of PA, PS,PL </option>
+            <option value="38">Removing PS due to divorce from PA </option>
+            <option value="39">Updating PA, PS PL Information </option>
+            <option value="40">How to Index a document</option>
+
+            </select>
+            <div class="select-decoration">
+              <i class="bi bi-chevron-down"></i>
+            </div>
+          </div>
+          <!-- Search results will be rendered here so results stay on the same page -->
+          <div id="search-results" class="search-results-container" style="margin-top:1.5rem; display:none;"></div>
+        </div>
+      </div>
+
+      <!-- Info Sections -->
+      <div id="content-sections" class="content-sections-full mt-4">
+      <div id="1" class="section section-enhanced">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="bi bi-person-plus-fill"></i>
+          </div>
+          <h3>Adding Natural Born Child (Within 60 days from birth event)</h3>
+          <span class="section-badge badge-within">Within 60 Days</span>
+        </div>
+        <ul>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Use Create icon</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Start date is date of birth</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes: Added CN ID# (First name) in SAP eff (date of birth). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="2" class="section section-enhanced">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="bi bi-person-plus"></i>
+          </div>
+          <h3>Adding Natural Born Child (Outside 60 days of birth event)</h3>
+          <span class="section-badge badge-outside">Outside 60 Days</span>
+        </div>
+        <ul>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Use Create icon</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Start date is process date</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes: Added CN ID# (First name) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="3" class="section section-enhanced">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h3>Adding Spouse (Within 60 days of marriage event)</h3>
+          <span class="section-badge badge-within">Within 60 Days</span>
+        </div>
+        <ul>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Use create record</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Start date is marriage date</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Review if the EE checked the indicator to retain TC pass benefits.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>If the EE wanted to retain TC, please put a HW indicator on the SP record.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>If EE doesn't want to retain TC, revoke the TC a day prior to marriage date.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Use Copy icon to update marital status, start date is process date.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>If the EE is requesting to enroll spouse to MD using marriage event, create a marriage event in AIS.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Event date in AIS should be the marriage date and then route the DCN to EDM - SAP Second Day Queue.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Make sure to go back to the DCN after 24-48 hours to complete the enrollment using the marriage event.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes = Added SP ID# (first name) in SAP eff (marriage date). Thank you</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes (marriage) = Routing DCN to SAP second day. Will enroll SP ID# (first name) to medical and dental coverage using marriage event once information feeds in AIS.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes = Added SP ID# (first name) in SAP eff (marriage date). Thank you</li>
+        </ul>
+      </div>
+
+      <div id="4" class="section section-enhanced">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="bi bi-heart"></i>
+          </div>
+          <h3>Adding Spouse (Outside 60 days of marriage event)</h3>
+          <span class="section-badge badge-outside">Outside 60 Days</span>
+        </div>
+        <ul>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Use create icon</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Start date is process date.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>
+            Review if the EE checked the indicator to retain TC pass benefits.
+            If the EE wanted to retain TC, please put a HW indicator on the SP record.
+          </li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>If EE doesn't want to retain TC, revoke the TC a day prior to process date.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Use copy to update marital status, start date is process date.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>If the EE is requesting to enroll SP to medical/dental, send a denial letter.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Create a denial letter, file name format: <strong>PPR Denial Letter</strong>.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Upload the denial to the attachment section on the DCN.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Send the denial letter using email or by mail if no email address is on file.</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes = Added SP ID# (first name) in SAP eff (process date). Thank you</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>DORS Notes (Denial) = Added SP ID# (first name) in SAP eff (process date). Sent Denial Letter</li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>
+            Regarding EE's request (EE is requesting to enroll spouse to medical and dental using marriage event, 
+            however it is already past 60 days from the marriage date). Thank you
+          </li>
+          <li><i class="bi bi-check-circle-fill list-icon"></i>Updated EE's marital status from M to S in SAP eff (process). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="5" class="section section-enhanced">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+          <h3>Updating TC/DP to SP (Within 60 days of marriage event)</h3>
+          <span class="section-badge badge-within">Within 60 Days</span>
+        </div>
+        <ul>
+          <li>Use pencil to end date TC/DP a day prior to marriage date.</li>
+          <li>Use Create icon to add SP, start date is marriage date.</li>
+          <li>
+            If the SP information on the form is different from the TC record on SAP, follow the information on the form.
+            Name, DOB, or Gender corrections if within 30 days of hire or 60 days of the marriage event is allowed.
+          </li>
+          <li>Make sure the designee number of TC/DP record and SP record is the same.</li>
+          <li>Use copy to update marital status, start date is process date.</li>
+          <li>If the EE is requesting to enroll spouse to MD using marriage event, create a marriage event in AIS.</li>
+          <li>Event date in AIS should be the marriage date and then route the DCN to EDM - SAP Second Day Queue.</li>
+          <li>Make sure to go back to the DCN after 24–48 hours to complete the enrollment using the marriage event.</li>
+          <li>DORS Notes = Updated TC ID# (First name) to SP in SAP eff (marriage date). Thank you</li>
+          <li>DORS Notes (Marriage) = Routing DCN to future queue. Will add SP ID# (first name) to medical and dental using marriage event once information feeds to AIS.</li>
+          <li>Updated TC ID# (First name) to SP in SAP eff (marriage date). Thank you</li>
+        </ul>
+      </div>
+
+      <div id="6" class="section">
+        <h3>Updating TC/DP to SP (Outside 60 days of marriage event) </h3>
+        <ul>
+          <li>Use pencil to end date TC/DP a day prior marriage date.</li>
+          <li>Use Create icon to add SP, start date is marriage date.</li>
+          <li>If the SP information on the form is different from the TC record on SAP, follow the information on the form. Name, DOB, or Gender corrections if within 30 days of hire or 60 days of the marriage event is allowed.</li>
+          <li>Make sure the designee number of TC/DP record and SP record is the same.</li>
+          <li>Use copy to update marital status, start date is process date.</li>
+          <li>If the EE is requesting to enroll spouse to MD using marriage event, create a marriage event in AIS.</li>
+          <li>Event date in AIS should be the marriage date and then route the DCN to EDM - SAP Second Day Queue.</li>
+          <li>Make sure to go back to the DCN after 24–48 hours to complete the enrollment using the marriage event.</li>
+          <li>DORS Notes = Updated TC ID# (First name) to SP in SAP eff (marriage date). Thank you</li>
+          <li>DORS Notes (Marriage) = Routing DCN to future queue. Will add SP ID# (first name) to medical and dental using marriage event once information feeds in AIS.</li>
+          <li>Updated TC ID# (First name) to SP in SAP eff (marriage date). Thank you</li>
+        </ul>
+      </div>
+
+      <div id="7" class="section">
+        <h3>Updating TC/DP to SP (Outside 60 days of marriage event - Process Date) </h3>
+        <ul>
+          <li>Use Pencil icon to end date TC/DP a day prior process date.</li>
+          <li>Use Create icon to add SP, start date is process date.</li>
+          <li>If the SP information on the form is different from the TC record on SAP, process the request however use the current TC information on SAP and request a copy of SP's Government ID showing the updated name/information.</li>
+          <li>Make sure the designee number of TC/DP record and SP record is the same.</li>
+          <li>Use copy to update marital status, start date is process date.</li>
+          <li>If the EE is requesting to enroll SP to medical/dental. Send a denial letter.</li>
+          <li>Create a denial letter, file name format <strong>PPR Denial Letter</strong>.</li>
+          <li>Upload the denial to the attachment section on the DCN.</li>
+          <li>Send the denial letter using email or by mail if no email address on file.</li>
+          <li>DORS Notes = Updated TC ID# (First name) to SP in SAP eff (process date). Thank you</li>
+          <li>DORS Notes (Denial) = Updated TC ID# (first name) to SP in SAP eff (process date). Sent Denial Letter regarding EE's request (EE is requesting to enroll spouse to medical and dental using marriage event, however it is already past 60 days from the marriage date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="8" class="section">
+        <h3>Removing spouse due to divorce  </h3>
+        <ul>
+          <li>Use pencil to revoke spouse, a day prior divorce date. Add spouse address if there is one indicated on the form.</li>
+          <li>Add divorce date on the separation date box in SAP.</li>
+          <li>Use copy to update marital status, start date is process date.</li>
+          <li>Check AIS to see if SP still has HW benefits. If there is, report a divorce event in AIS effective the date of divorce and remove SP from HW benefits.</li>
+          <li>DORS Notes (HW) = Revoked SP ID# (first name) due to divorce in SAP eff (a day prior divorce date). Updated EE's marital status from M to D in SAP eff (process date). Reported divorce event in AIS and removed SP ID# (first name) from (type of coverage) eff (divorce date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="9" class="section">
+        <h3>Update SP to Legally Separated Spouse </h3>
+        <ul>
+          <li>Use the Pencil icon to end date the SP record effective a day prior the legal separation date.</li>
+          <li>Use Create icon to create a legally separated spouse record. Start date of SL record is legal separation date.</li>
+          <li>Make sure that the designee number of the SP and SL record are the same.</li>
+          <li>Use copy to update the EE's marital status to legally separated. Start date is process date.</li>
+          <li>DORS Notes = Updated SP ID# (first name)'s status to legally separated spouse in SAP effective (Legal separation date). Updated EE's marital status from M to Legally Separated in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="10" class="section">
+        <h3>Updating SP to Separated spouse.</h3>
+        <ul>
+          <li>Use the pencil icon to end date the SP record effective a day prior the separation date.</li>
+          <li>Use create icon to create a separated spouse record. Start date of SS record is separation date.</li>
+          <li>Use copy to update the EE's marital status to separated. Start date is process date.</li>
+          <li>DORS Notes = Updated SP ID# (first name)'s status to separated spouse in SAP effective (separation date). Updated EE's marital status from Married to Separated in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="11" class="section">
+        <h3>Reporting death of spouse.</h3>
+        <ul>
+          <li>Use pencil to report death of SP. End date is date of death.</li>
+          <li>Put date of death in the box of "Since".</li>
+          <li>Use copy to update the EE's marital status to widowed. Start date is process date.</li>
+          <li>If the spouse has any HW benefits, report a death of spouse event in AIS. Event date is date of death.</li>
+          <li>Send an email to POC regarding death tracker.</li>
+          <li>DORS Notes = Reported SP (Spouse's first name) death in SAP effective (date of death). Updated EE's marital status from Married to Widowed effective (process date). Reported Death event in AIS effective (spouse's date of death).</li>
+        </ul>
+      </div>
+      
+      <div id="12" class="section">
+        <h3>Reporting death of spouse (no death certificate) </h3>
+        <ul>
+          <li>Complete the DCN.</li>
+          <li>DORS Notes = SP (spouse's first name) copy of death certificate is missing. Sent email to POC to track death reporting.</li>
+          <li>Send an email to POC to track death reporting.</li>
+        </ul>
+      </div>
+
+      <div id="13" class="section">
+        <h3> Update SP Information </h3>
+        <ul>
+          <li>Use copy to update SP information, start date is process date.</li>
+          <li>If request is within 30 days of new hire or 60 days of marriage, then no supporting document required.</li>
+          <li>If request is outside 30 days of new hire or 60 days of marriage, we need a copy of spouse's government ID showing updated information.</li>
+          <li>DORS Notes = Updated SP ID# (first name)'s (Specific information updated) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="14" class="section">
+        <h3>Adding Domestic Partner</h3>
+        <ul>
+          <li>Affidavit of Domestic Partnership form.</li>
+          <li>Affidavit must have the same address as the address on file.</li>
+          <li>Affidavit must be notarized within the last 60 days.</li>
+          <li>Date partnership commenced on the FSCF and Affidavit must be the same.</li>
+          <li>Proof of Domestic Partnership:
+            <ul>
+              <li>Lease Agreement</li>
+              <li>Utility bills</li>
+              <li>Joint bank account statement</li>
+              <li>Designation of the domestic partner as durable power of attorney</li>
+            </ul>
+          </li>
+          <li>Proof of domestic partnership must show both EE and DP names, address on file, and should be backdated 6 months or older.</li>
+          <li>Lease agreement must show the Landlord's signature.</li>
+          <li>Use create icon, start date is process date.</li>
+          <li>Use copy to update marital status, start date is process date and make sure to add the commencement date on the "since" field.</li>
+          <li>DORS Notes = Added DP ID# (first name) in SAP eff (process date). Updated EE's marital status from S to DP in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="15" class="section">
+        <h3>Updating TC to DP.  </h3>
+        <ul>
+          <li>Use Pencil to revoke TC a day prior process date. </li>
+          <li>Use Create Icon to add DP, start date is process date.</li>
+          <li>Make sure that the designee number of the TC record and DP record is the same.EE</li>
+          <li>Follow the information on the FSCF.</li>
+          <li>Use copy to update marital status, start date is process date.</li>
+          <li>DORS Notes =Adding DP (EE have a different person TC on file)</li>
+          <li>Use pencil to revoke TC a day prior process date. </li>
+          <li>Use Create Icon to add DP, start date is process date.</li>
+          <li>Use copy to update marital status, start date is process date.</li>
+          <li>DORS Notes = Added DP ID# (first name in SAP eff (process date). Updated EE's marital status from S to DP in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="16" class="section">
+        <h3>Adding DP (SP still active on record) </h3>
+        <ul>
+          <li>Callback or BIJUN</li>
+          <li>Request a FSCF for SP and a copy of the first and last page of the final divorce decree showing the Judge's signature</li>
+        </ul>
+      </div>
+
+      <div id="17" class="section">
+        <h3>Adding DP (EE already have a DP on file) </h3>
+        <ul>
+          <li>Callback or BIJUN</li>
+          <li>Request EE to send FSCF for DP to remove Ex-DP.</li>
+          <li>Once Ex-DP is removed, we can then add the new DP.</li>
+        </ul>
+      </div>
+
+      <div id="18" class="section">
+        <h3>Removing DP (No termination form) </h3>
+        <ul>
+          <li>Use pencil, revoke date is a day prior process date.</li>
+          <li>Put process date on the separation date on SAP.</li>
+          <li>Use copy icon to update marital, start date is process date.</li>
+          <li>DORS = Revoked DP ID# (first name) in SAP due to termination of relationship eff (process date). Updated EE's marital status from DP to S in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="19" class="section">
+        <h3>Removing DP (With termination form) </h3>
+        <ul>
+          <li>Use pencil, revoke date is a day prior termination date.</li>
+          <li>Put termination date on the separation date on SAP.</li>
+          <li>Use copy icon to update marital, start date is process date.</li>
+          <li>DORS = Revoked DP ID# (first name) in SAP due to termination of relationship eff (end date in SAP). Updated EE's marital status from DP to S in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="20" class="section">
+        <h3>Removing DP due to death </h3>
+        <ul>
+          <li>Use Pencil icon, end date is date of death.</li>
+          <li>Put date of death on the date of death field.</li>
+          <li>Use copy icon to update marital, start date is process date.</li>
+          <li>DORS notes = Reported death of DP ID# (first name) in SAP eff (date of death). Updated EE's marital status from DP to S in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="21" class="section">
+        <h3>Updating DP information </h3>
+        <ul>
+          <li>Use Copy icon to update information</li>
+          <li>Start date is process date</li>
+          <li>DORS Notes = Updated DP ID# (first name)'s (Specific information updated) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="22" class="section">
+        <h3>Adding child of DP </h3>
+        <ul>
+          <li>Domestic Partner children from 1 to 18 years old 
+          <ul>
+            <li>EE needs to submit the FSCF for DP, Birth Certificate and Social Security Card</li>
+          </ul>
+        </li>
+        <li>
+          Domestic Partner children from 19–23 years old 
+          <ul>
+            <li>EE needs to submit the FSCF for DP, Birth Certificate, Social Security Card and financial proof to support the dependent relationship that existed prior to age 19.</li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+
+      <div id="23" class="section">
+        <h3>Adding TC for the first time. </h3>
+        <ul>
+          <li>Start date is process date</li>
+          <li>Use create record</li>
+          <li>DORS Notes = Added TC ID# (First name) in SAP eff (Start date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="24" class="section">
+        <h3>Updating TC (Current TC have not commenced a flight) </h3>
+        <ul>
+          <li>Revoke TC using pencil a day prior process date.</li>
+          <li>Add TC using create record, start date is process date.</li>
+          <li>DORS Notes = Revoked TC ID# (First name) eff (end date in SAP) and added TC ID# (First name) in SAP eff (Start date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="25" class="section">
+        <h3>Updating TC (Current TC commenced a flight, request is within 6 weeks from PAD)</h3>
+        <ul>
+          <li>Revoke TC using pencil eff 2 days prior PAD.</li>
+          <li>Add TC using create record eff a day prior PAD.</li>
+          <li>DORS notes = Revoked TC ID# (First name) eff (end date in SAP) and added TC ID# (First name) in SAP eff (Start date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="26" class="section">
+        <h3>Updating TC(Current TC commenced a flight within PAD) </h3>
+        <ul>
+          <li>•	BIJUN</li>
+        </ul>
+      </div>
+
+      <div id="27" class="section">
+        <h3>Revoking TC </h3>
+        <ul>
+          <li>Use Pencil icon</li>
+          <li>Revoke TC eff process date or follow the revoke date indicated on the form.</li>
+          <li>We don't backdate revoking TC</li>
+          <li>DORS Notes = Revoke TC ID# (First name) in SAP eff (End date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="28" class="section">
+        <h3>Reporting death of TC </h3>
+        <ul>
+          <li>Use Pencil icon</li>
+          <li>End date is date of death</li>
+          <li>Make sure date of death is added on the date of death field.</li>
+          <li>DORS Notes = Reported death of TC ID# (First name) in SAP eff (date of death). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="29" class="section">
+        <h3>Reinstating Old TC (Current TC have not commenced a flight) </h3>
+        <ul>
+          <li>Revoke current TC using pencil eff a day prior process date.</li>
+          <li>Use copy to reinstate old TC record</li>
+          <li>Start date is process date</li>
+          <li>Make sure that when reinstating old TC record, all information is correct and updated.</li>
+          <li>DORS Notes = Revoked TC ID# (First name of current TC) eff (a day prior process date) and added TC ID# (First name) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="30" class="section">
+        <h3>Reinstating previous TC (Current TC commenced a flight, request is within 6 weeks from the PAD) </h3>
+        <ul>
+          <li>Revoked current TC using pencil eff 2 days prior PAD.</li>
+          <li>Use pencil to change previous TC's SSN to 999-99-9999.</li>
+          <li>Use create icon to add new TC record.</li>
+          <li>Make sure the designee of previous TC record and new TC record is the same.</li>
+          <li>Start date is a day prior PAD.</li>
+          <li>DORS Notes = Revoked TC ID# (First name of current TC) eff (2 days prior PAD) and added TC ID# (First name) in SAP eff (a day prior PAD). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="31" class="section">
+        <h3>Reinstating Spouse (Current TC didn't commenced a flight) </h3>
+        <ul>
+          <li>Revoke current TC using pencil eff process date.</li>
+          <li>Coordinate with support, POCs to reinstate spouse on TravelNet.</li>
+          <li>DORS Notes = Revoked TC ID# (First name) in SAP eff (end date) and reinstated SP ID# (First name) on TravelNet eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="32" class="section">
+        <h3>Reinstating spouse (Current TC commenced a flight within PAD, request is within 6 weeks from PAD) </h3>
+        <ul>
+          <li>Revoke TC using pencil eff a day prior PAD.</li>
+          <li>Route DCN to future queue and reinstate spouse's travel on PAD.</li>
+          <li>DORS Notes = Revoke TC ID# (First name) in SAP eff (a day prior PAD). Routing DCN to future queue. Will reinstate SP ID# (First name) on PAD. Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="33" class="section">
+        <h3>Updating TC Information </h3>
+        <ul>
+          <li>Use Copy icon</li>
+          <li>Start date is process date</li>
+          <li>DORS Notes = Updated TC ID# (First name)'s (Info that was updated) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="34" class="section">
+        <h3>Adding PA </h3>
+        <ul>
+          <li>Use create icon</li>
+          <li>Start date is process date</li>
+          <li>DORS Notes = Added PA ID# (First name) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="35" class="section">
+        <h3>Adding PS </h3>
+        <ul>
+          <li>Check first if the PA to whom the PS is married to is already added.</li>
+          <li>We cannot add PS if the PA is not yet added or if the PA is already deceased.</li>
+          <li>Use create icon</li>
+          <li>Start date is process date.</li>
+          <li>DORS Notes = Added PS ID# (First name) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="36" class="section">
+        <h3>Adding PL </h3>
+        <ul>
+          <li>Cannot be added if there is already a PA on file</li>
+          <li>Make sure to check supporting documents before processing the request.</li>
+          <li>Use create icon</li>
+          <li>Start date is process date</li>
+          <li>DORS Notes = Added PL ID# (First name) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="37" class="section">
+        <h3>Reporting death of PA, PS,PL </h3>
+        <ul>
+          <li>Use pencil icon</li>
+          <li>End date is date of death</li>
+          <li>Make sure date of death is added on the date of death field.</li>
+          <li>DORS Notes = Reported death of (PA, PS, PL) ID# (First name) in SAP eff (date of death). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="38" class="section">
+        <h3>Removing PS due to divorce from PA </h3>
+        <ul>
+          <li>Use pencil icon</li>
+          <li>End date of PS record is date of divorce</li>
+          <li>DORS Notes = Revoked PS ID# (First name) in SAP due to divorce eff (divorce date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="39" class="section">
+        <h3>Updating PA, PS PL Information </h3>
+        <ul>
+          <li>Use copy icon</li>
+          <li>Start date is process date</li>
+          <li>DORS Notes = Updated (PA,PS,PL) ID# (First name)'s (Info that was updated) in SAP eff (process date). Thank you.</li>
+        </ul>
+      </div>
+
+      <div id="40" class="section section-enhanced">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="bi bi-file-earmark-text-fill"></i>
+          </div>
+          <h3>How to Index a document</h3>
+          <span class="section-badge" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); color: white; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);">Guide</span>
+        </div>
+        <ul>
+          <li><i class="bi bi-1-circle-fill list-icon" style="color: #6366f1;"></i>Step 1: Go to your assigned queue</li>
+          <li><i class="bi bi-2-circle-fill list-icon" style="color: #6366f1;"></i>Step 2: Open an item (DCN) – always choose the one on the top.</li>
+          <li><i class="bi bi-3-circle-fill list-icon" style="color: #6366f1;"></i>Step 3: Index the document.</li>
+          <li><i class="bi bi-4-circle-fill list-icon" style="color: #6366f1;"></i>Step 4: Click the double paper icon near the DCN, to copy the DCN as your productivity.</li>
+          <li><i class="bi bi-5-circle-fill list-icon" style="color: #6366f1;"></i>Step 5: Check the DCN Mapping to see if it's already in the correct queue. Click if needed to Autoroute/Complete.</li>
+        </ul>
+      </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+<!-- Initialize Select2 and dynamic quick access -->
+<script>
+  $(document).ready(function () {
+    // Initialize the Select2 dropdown
+    $('#optionSelector').select2({
+      placeholder: "-- Select an Option --",
+      allowClear: true,
+      width: '100%'
+    });
+
+    // Utilities: localStorage key for favorites
+    const LS_FAV = 'dkb_favorites';
+
+    function getFavorites() {
+      try { return JSON.parse(localStorage.getItem(LS_FAV) || '[]'); } catch (e) { return []; }
+    }
+    function saveFavorites(arr) { localStorage.setItem(LS_FAV, JSON.stringify(arr)); }
+
+    function renderQuickAccess() {
+      const $fav = $('#favorites');
+      $fav.empty();
+
+      const favs = getFavorites();
+      if (favs.length) {
+        // Render as grid; show heading
+        $fav.append('<h5 style="width:100%; margin:0 0 .5rem 0;">Favorites</h5>');
+        favs.forEach(item => {
+          const label = item.label || ($('#optionSelector option[value="' + item.id + '"]').text() || 'Action ' + item.id);
+          const $a = $('<a href="#" class="quick-link-card" data-option="'+item.id+'">')
+            .append('<i class="bi bi-star-fill quick-link-icon" style="color:var(--delta-red);"></i>')
+            .append('<span class="quick-link-text">'+label+'</span>');
+          $fav.append($a);
+        });
+        $('#static-fallback').hide();
+      } else {
+        $('#static-fallback').show();
+      }
+    }
+
+    function toggleFavorite(id, label) {
+      const arr = getFavorites();
+      const exists = arr.find(i => i.id === id);
+      let nowFav = false;
+      if (exists) {
+        const next = arr.filter(i => i.id !== id);
+        saveFavorites(next);
+        nowFav = false;
+      } else {
+        arr.unshift({id: id, label: label});
+        saveFavorites(arr.slice(0,10));
+        nowFav = true;
+      }
+      // Update section visual state if present
+      const $sec = $('#' + id);
+      if ($sec.length) {
+        $sec.toggleClass('favorited', nowFav);
+        const $hdrBtn = $sec.find('.section-favorite-toggle');
+        if ($hdrBtn.length) {
+          $hdrBtn.html(nowFav ? '<i class="bi bi-star-fill"></i> Unfavorite' : '<i class="bi bi-star"></i> Favorite');
+        }
+      }
+      renderQuickAccess();
+    }
+
+    // Render quick access on load
+    renderQuickAccess();
+
+    // Add a Favorite/Unfavorite button to each section header (right-aligned)
+    $('.section').each(function() {
+      const id = $(this).attr('id');
+      const $header = $(this).find('.section-header').first();
+      if (!$header.length) return;
+      if ($header.find('.section-favorite-toggle').length) return; // already added
+      const favs = getFavorites();
+      const isFav = favs.some(i => i.id === id.toString());
+      const $btn = $('<button class="btn btn-sm btn-outline-primary section-favorite-toggle" type="button">')
+        .html(isFav ? '<i class="bi bi-star-fill"></i> Unfavorite' : '<i class="bi bi-star"></i> Favorite')
+        .attr('data-id', id)
+        .css({ 'margin-left': 'auto' });
+      $header.append($btn);
+      // Mark section visually if it's already a favorite
+      if (isFav) {
+        $(this).addClass('favorited');
+      }
+    });
+
+    // Render selected section into the in-page results area so results stay on the same page
+    $('#optionSelector').on('change', function () {
+      const selected = $(this).val();
+      const label = $('#optionSelector option:selected').text();
+      const $results = $('#search-results');
+      $results.empty();
+      if (selected) {
+        const $section = $('#' + selected);
+        if ($section.length) {
+          // Clone the section so we don't move the original DOM node
+          const $clone = $section.clone(true);
+          $clone.show().addClass('show');
+
+          // Note: favorite controls are provided on the section headers only
+
+          $results.append($clone);
+          $results.fadeIn(250);
+
+          // no recent tracking — only favorites are used for quick access
+
+          // Keep the user on the same search pane — hide the big content list to avoid duplication
+          $('#content-sections').hide();
+          $('#dependent-action').show();
+
+          // Scroll slightly to the results within the dependent-action pane
+          $('html, body').animate({
+            scrollTop: $('#dependent-action').offset().top - 20
+          }, 400);
+        }
+      } else {
+        // No selection — clear results and hide the results container
+        $results.fadeOut(150, function () { $(this).empty(); });
+        // Optionally show full content list again (commented out by default)
+        // $('#content-sections').fadeIn(200);
+      }
+    });
+
+    // Ensure every section list item has a check icon at the start
+    $('.section ul li').each(function() {
+      // If this li doesn't already contain an icon with class `list-icon`, prepend the check icon
+      if ($(this).children('i.list-icon').length === 0) {
+        $(this).prepend('<i class="bi bi-check-circle-fill list-icon"></i>');
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
